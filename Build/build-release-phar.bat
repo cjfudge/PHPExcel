@@ -1,2 +1,2 @@
 @ECHO OFF
-phing -f build.xml release-phar
+composer exec phing -- -f build.xml release-phar

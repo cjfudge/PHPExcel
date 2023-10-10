@@ -1,2 +1,2 @@
 @ECHO OFF
-phing -f build.xml release-standard
+composer exec phing -- -f build.xml release-standard
