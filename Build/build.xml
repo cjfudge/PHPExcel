@@ -100,18 +100,7 @@
         </reflexive>
     </target>
 
-    <target name="apidocs" depends="versionNumber">
-        <echo msg="Generating API documentation..."/>
-        <phpdoc2 title="PHPExcel classes"
-                 destdir="${phing.dir}/build/Documentation/API"
-				 template="responsive">
-            <fileset dir="${phing.dir}/build/Classes">
-                <include name="**/*.php"/>
-            </fileset>
-        </phpdoc2>
-    </target>
-
-    <target name="release-standard" depends="apidocs">
+    <target name="release-standard" depends="versionNumber">
         <mkdir dir="${phing.dir}/release"/>
 
         <echo msg="Creating release package (v${packageVersion} with ${documentFormat} documents)..."/>
