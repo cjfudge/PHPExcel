@@ -36,6 +36,9 @@ Planned for 1.8.2
 - Bugfix:   (vitalyrepin)     Pull Request 869  - c:max and c:min elements shall NOT be inside c:orientation elements
 - General:  (sim642)          Pull Request 489  - Implement actual timezone adjustment into PHPExcel_Shared_Date::PHPToExcel
 
+2023-10-10 (1.9.0)
+- Feature: - Replaced "{}" access with "[]"
+
 
 2015-04-30 (v1.8.1):
 - Bugfix:   (goncons)         Work Item GH-397  - Fix for Writing an Open Document cell with non-numeric formula
